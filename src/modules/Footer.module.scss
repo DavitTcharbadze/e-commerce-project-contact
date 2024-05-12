@@ -1,0 +1,219 @@
+.footer-wrapper {
+  padding: 100px;
+  background-color: black;
+  color: white;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        color: gray;
+      }
+    }
+
+    @media (max-width: 520px) {
+      justify-content: center;
+    }
+
+    .footer-list-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .input-wrapper {
+          position: relative;
+
+          input {
+
+            width: 154px;
+            height: 48px;
+            background-color: transparent;
+            border: 1.5px solid white;
+            border-radius: 4px;
+            color: white;
+            padding-left: 10px;
+            font-size: 16px;
+            padding-right: 50px;
+
+            &::placeholder {
+              font-size: 16px;
+              line-height: 24px;
+              font-weight: 400;
+              margin-left: 10px;
+            }
+          }
+
+          img {
+            position: absolute;
+            bottom: 50%;
+            transform: translateY(50%);
+            left: 180px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 70px;
+      }
+    }
+
+    .footer-list-2 {
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        li {
+          h2 {
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 500;
+            cursor: default;
+            &:hover {
+              color: white;
+            }
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 70px;
+      }
+    }
+
+    .footer-list-3-4 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        li:nth-child(1) {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          cursor: default;
+          &:hover {
+            color: white;
+          }
+        }
+
+        li {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          text-wrap: nowrap;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 70px;
+      }
+    }
+
+    .footer-list-5 {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        li:nth-child(1) {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 28px;
+          cursor: default;
+          &:hover {
+            color: white;
+          }
+        }
+
+        li:nth-child(2) {
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+              color: #FAFAFA;
+              font-size: 12px;
+              line-height: 18px;
+              font-weight: 500;
+              opacity: 0.7;
+            }
+
+            .download-app {
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              gap: 10px;
+
+              .qr-code-icon {
+                width: 76px;
+                height: 76px;
+              }
+
+              .mobile-download-icons {
+                display: flex;
+                gap: 4px;
+
+              }
+            }
+          }
+        }
+
+        li:nth-child(3) {
+          display: flex;
+          gap: 24px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        margin-bottom: 70px;
+      }
+    }
+
+  }
+}

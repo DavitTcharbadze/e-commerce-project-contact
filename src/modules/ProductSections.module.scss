@@ -1,0 +1,27 @@
+.sections-wrapper{
+    width: 100%;
+    display: flex;
+    .line{
+        border: solid 1px rgb(170, 170, 170);
+        width: 0px;
+        height: 425px;
+        margin-left: 120px;
+    }
+    .sections{
+        margin-left: 13%;
+        margin-top: 50px;
+        .box{
+            height: 30px;
+            padding-top: 15px;
+            cursor: pointer;
+            &:hover{
+            h3{
+                background-color: rgb(240, 240, 240);
+            }
+            }
+        }
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+}
