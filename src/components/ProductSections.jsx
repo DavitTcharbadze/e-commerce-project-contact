@@ -1,7 +1,7 @@
 import classes from '../modules/ProductSections.module.scss';
 import { useState } from 'react';
 import axios from 'axios';
-
+import ImageCarousel from './ImageCarousel';
 const ProductSections = () => {
     const [sectionData, setSectionData] = useState(null);
 
@@ -28,6 +28,7 @@ const ProductSections = () => {
                 <div className={classes['box']} onClick={() => handleSectionClick(9)}><h3>Health & Beauty</h3></div>
             </div>
             <div className={classes['line']}></div>
+            <ImageCarousel />
             {sectionData && (
                 <div>
                     <h2>{sectionData.name}</h2>
