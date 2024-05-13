@@ -3,7 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import ImageCarousel from './ImageCarousel';
 const ProductSections = () => {
-    const [sectionData, setSectionData] = useState(null);
+    const [sectionData, setSectionData] = useState();
 
     const handleSectionClick = async (sectionId) => {
         try {
